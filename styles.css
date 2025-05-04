@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+#search-form {
+  display: flex;
+  margin-top: 10px;
+}
+
+#search-input {
+  padding: 10px;
+  width: 60%;
+  max-width: 400px;
+  border: none;
+  border-radius: 5px;
+}
+
+#search-button {
+  padding: 10px 20px;
+  background-color: #ff3c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#search-button:hover {
+  background-color: #e02929;
+}
+
+main {
+  padding: 20px;
+}
+
+#movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.movie-card {
+  background-color: white;
+  border-radius: 10px;
+  width: 200px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.movie-card h3 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+
+.movie-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.movie-overview {
+  display: block;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #666;
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#modal-content {
+  background-color: white;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 85%;
+  border-radius: 10px;
+  text-align: center;
+  overflow-y: auto;
+}
+
+#modal-content img {
+  width: 200px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+#modal-content h2 {
+  margin-bottom: 10px;
+}
+
+#modal-content p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+#modal-content button {
+  padding: 10px 20px;
+  background-color: #ff3c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#modal-content button:hover {
+  background-color: #e02929;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
