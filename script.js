@@ -97,6 +97,7 @@ function showModal(movie) {
     <img src="${IMAGE_BASE_URL + movie.poster_path}" alt="${movie.title}" />
     <p>개봉일 : ${movie.release_date}</p>
     <p>장르 : ${genres}</p>
+    <p>평점 : ⭐ ${movie.vote_average}</p>
     <p>줄거리 : ${movie.overview || "줄거리 정보가 없습니다."}</p>
     <button onclick="closeModal()">닫기</button>
   `;
